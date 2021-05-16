@@ -1,0 +1,284 @@
+/* ---------------------------------------
+    top
+    main
+--------------------------------------- */
+/* ---------------------------------------
+    bk
+--------------------------------------- */
+section#section1    {
+    background: url(../img/about_bk.jpg) no-repeat center center / cover;
+}
+
+section#section2    {
+    background: url(../img/service_bk.jpg) no-repeat center center / cover;
+}
+
+section#section3    {
+    background: url(../img/company_bk.jpg) no-repeat center center / cover;
+}
+
+/* ---------------------------------------
+    about,servive,company
+--------------------------------------- */
+h2  {
+    font-size: 7.0rem;
+    margin-bottom: 80px;
+}
+
+section.section {
+    margin-right: auto;
+}
+
+section.section div.wrap {
+    width: calc(100% - 260px);
+    height: 100%;
+    margin-left: auto;
+    color: #fff;
+    position: relative;
+}
+
+section.section div.wrap div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+
+.service .list,
+.company dl {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------
+    about
+--------------------------------------- */
+.about p  {
+    font-size: 2.4rem;
+    line-height: 1.6;
+}
+/* ---------------------------------------
+    servive
+--------------------------------------- */
+.service .list    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service .list section  {
+    text-align: center;
+}
+
+.service .list section img  {
+    width: 200px;
+}
+
+.service .list section h3  {
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+/* ---------------------------------------
+    company
+--------------------------------------- */
+.company dl   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.company dt   {
+    width: 200px;
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 2.0rem;
+}
+
+.company dd   {
+    width: calc(100% - 200px);
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 2.0rem;
+    line-height: 1.6;
+}
+
+.company dd img {
+    width: 85px;
+}
+
+/* ---------------------------------------
+    copyright
+--------------------------------------- */
+.copyright  {
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+    background-color: #453C38;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ---------------------------------------
+    responsive
+--------------------------------------- */
+@media screen and (max-width: 1300px) {
+    /* ---------------------------------------
+        about,servive,company
+    --------------------------------------- */
+    section.section div.wrap div.center {
+        width: 90%;
+    }
+
+    .service .list,
+    .company dl {
+        width: 100%;
+    }
+}
+
+/* ---------------------------------------
+    responsive
+    tablet
+--------------------------------------- */
+@media screen and (max-width: 1040px) {
+    /* ---------------------------------------
+        servive
+    --------------------------------------- */
+    .service .list  {
+        flex-direction: column;
+    }
+
+    .service .list section:nth-child(2) {
+        margin: 70px 0;
+    }
+
+    .service .list section img {
+        width: 160px;
+    }
+
+    .service .list section h3   {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+        /* ---------------------------------------
+            about,servive,company
+        --------------------------------------- */
+        section.section div.wrap    {
+            width: calc(100% - 200px);
+        }
+
+        section.section div.wrap div.center {
+            width: 80%;
+        }
+        /* ---------------------------------------
+            about
+        --------------------------------------- */
+        .about h2   {
+            font-size: 4.5rem;
+            line-height: 1.4;
+            margin-bottom: 50px;
+        }
+        
+        .about p  {
+            font-size: 2.0rem;
+            line-height: 1.6;
+        }
+        /* ---------------------------------------
+            company
+        --------------------------------------- */
+        .company dt {
+            width: 120px;
+        }
+
+        .company dd {
+            width: calc(100% - 120px);
+        }
+}
+
+/* ---------------------------------------
+    responsive
+    sp
+--------------------------------------- */
+@media screen and (max-width: 640px) {
+    /* ---------------------------------------
+        copyright
+    --------------------------------------- */
+    .copyright {
+        width: calc(100% + 32px);
+        position: relative;
+        bottom: 0;
+        left: -16px;
+    }
+    /* ---------------------------------------
+        about,servive,company
+    --------------------------------------- */
+    #pp-nav {
+        display: none;
+    }
+    
+    h2  {
+        font-size: 5.0rem;
+        margin-bottom: 50px;
+    }
+
+    section.section div.wrap    {
+        width: 100%;
+        padding: 100px 16px 50px;
+    }
+
+    section.section div.wrap div.center {
+        width: 100%;
+    }
+
+    section.section div.wrap div.center {
+        position: static;
+        top: unset;
+        left: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        width: 100%;
+    }
+    /* ---------------------------------------
+        about
+    --------------------------------------- */
+    .about p  {
+        padding-bottom: 50px;
+    }
+    /* ---------------------------------------
+        service
+    --------------------------------------- */
+    .service .list section:last-child {
+        margin-bottom: 50px;
+    }
+
+    .service .list section img {
+        width: 110px;
+    }
+
+    /* ---------------------------------------
+        company
+    --------------------------------------- */
+    .company dl {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .company dt {
+        padding-bottom: 0;
+        font-weight: bold;
+    }
+
+    .company dd {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+}

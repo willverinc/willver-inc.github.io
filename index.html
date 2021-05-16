@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="content-type" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shared/css/reset.css">
+    <link rel="stylesheet" href="shared/css/main.css">
+    <link rel="stylesheet" href="shared/css/top.css">
+    <link rel="stylesheet" href="shared/plugin/jquery.pagepiling.css">
+    <script src="shared/js/jQuery-3.4.1.min.js"></script>
+    <script src="shared/plugin/jquery.pagepiling.min.js"></script>
+    <script src="shared/js/main.js"></script>
+    <title>WILLVER</title>
+</head>
+<body>
+    <header>
+        <h1 class="site_title">
+            <a href="index.html">
+                <img src="shared/img/logo.png" alt="WILLVER">
+            </a>
+        </h1>
+        <div class="drawer">
+            <input type="checkbox" id="drawer_check" class="drawer_hidden" >
+            <label for="drawer_check" class="drawer_open"><span></span></label>
+            <nav id="menu_header" class="drawer_content">
+                <ul class="nav">
+                    <li data-menuanchor="page1" class="active"><a href="#page1">ABOUT</a></li>
+                    <li data-menuanchor="page2"><a href="#page2">SERVICE</a></li>
+                    <li data-menuanchor="page3"><a href="#page3">COMPANY</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/forms/d/1S15lslEndWUkMcHKWcMcp9w9haskm6q977GhdGamZkE/edit">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="pagepiling">
+            <section class="section about pp-scrollable" id="section1">
+                <div class="wrap">
+                    <div class="center">
+                        <h2>テクノロジーの<br class="tab">チカラで社会を豊かに</h2>
+                        <p>
+                            人類は科学のチカラで繁栄してきました。<br>
+                            しかし、科学によって人間そのものが大きく進化したわけではありません。<br>
+                            現代では、使いこなせないほどの技術や情報が溢れ、その数だけ未来の可能性が埋もれています。<br>
+                            <br>
+                            私たちは、社会を豊かにするビジネスとテクノロジーの可能性を探り、そのポテンシャルを最大限活かすサービスを開発することで社会に貢献していきます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section service pp-scrollable" id="section2">
+                <div class="wrap">
+                    <div class="center">
+                        <h2>SERVICE</h2>
+                        <div class="list">
+                            <section>
+                                <img src="shared/img/service01.svg" alt="システムコンサルティング">
+                                <h3>システムコンサルティング</h3>
+                            </section>
+                            <section>
+                                <img src="shared/img/service02.svg" alt="情報システム開発・保守">
+                                <h3>情報システム開発・保守</h3>
+                            </section>
+                            <section>
+                                <img src="shared/img/service01.svg" alt="Webサイト制作・運営">
+                                <h3>Webサイト制作・運営</h3>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section company pp-scrollable" id="section3">
+                <div class="wrap">
+                    <div class="center">
+                        <h2>COMPANY</h2>
+                        <dl>
+                            <dt>会社名</dt>
+                            <dd>WILLVER合同会社</dd>
+                            <dt>事業内容</dt>
+                            <dd>
+                                システムコンサルティング事業<br>
+                                情報システム開発・保守<br>
+                                Webサイト制作・運営<br>
+                                コンピュータシステム及びネットワークの導入
+                            </dd>
+                            <dt>所在地</dt>
+                            <dd>神奈川県横浜市西区北幸一丁目11番1号水信ビル7階</dd>
+                            <dt>資本金</dt>
+                            <dd>1,000,000円</dd>
+                            <dt>代表者</dt>
+                            <dd><img src="shared/img/name.png" alt=""></dd>
+                        </dl>
+                    </div>
+                    <p class="copyright">© WILLVER, Inc. All rights reserved.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
