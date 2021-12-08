@@ -1,0 +1,187 @@
+main    {
+    width: 100%;
+    max-width: 800px;
+    margin: 200px auto 200px;
+    position: relative;
+}
+
+h2  {
+    font-size: 7.0rem;
+}
+
+h2 span {
+    display: block;
+    margin-top: 16px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #8D97A7;
+}
+
+.cycle {
+    width: 20rem;
+    height: 20rem;
+    left: -10rem;
+    top: -5rem;
+}
+
+form    {
+    font-size: 1.8rem;
+}
+
+.question    {
+    display: block;
+    margin-bottom: 20px;
+}
+
+label.title {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.title span {
+    font-size: 1.4rem;
+    padding: 2px 8px;
+    margin-left: 8px;
+    background-color: #aa4747;
+    color: #fff;
+    border-radius: 2px;
+}
+
+label.error {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color: #aa4747;
+}
+
+label.error.confirm {
+    color: #5C677B;
+}
+
+input   {
+    display: block;
+    height: 40px;
+    border-radius: 1px;
+    border: 1px solid #8D97A7;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 0 9px;
+    letter-spacing: 1px;
+}
+
+textarea    {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 9px;
+}
+
+.flex   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex input {
+    width: 49%;
+}
+
+.agreement_area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+label#contact_agreement1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+input#agreement {
+    height: 18px;
+    display: inline-block;
+    width: 18px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.btn_area   {
+    text-align: center;
+}
+
+input.btn_design {
+    width: 220px;
+    margin: 0 15px 20px;
+    color: #fff;
+    background-color: #8D97A7;
+    border: none;
+    display: inline-block;
+}
+
+input.btn_design:disabled   {
+    background-color: #ddd;
+}
+
+input#confirmBtn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.btn_design.back   {
+    width: 220px;
+    margin: 0 auto 20px;
+    color: #fff;
+    background-color: #8D97A7;
+    border: none;
+    display: block;
+}
+
+div#success {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    main    {
+        padding: 0 40px;
+    }
+
+    .cycle {
+        left: 33rem;
+        top: -5rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    main    {
+        padding: 140px 16px 0;
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 90px;
+    }
+
+    h2  {
+        font-size: 4.0rem;
+    }
+
+    h2 span {
+        font-size: 2.0rem;
+        margin-top: 4px;
+    }
+
+    form    {
+        font-size: 1.6rem;
+    }
+
+    .cycle {
+        left: 20rem;
+        top: 7rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    div#success {
+        font-size: 1.6rem;
+    }
+}

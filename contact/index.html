@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared/css/reset.css">
+    <link rel="stylesheet" href="../shared/css/style.css">
+    <link rel="stylesheet" href="../shared/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <title>WILLVER</title>
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="position">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../shared/img/logo.png" alt="WILLVER">
+                    </a>
+                </h1>
+                <nav>
+                    <div class="round-wrap">
+                        <div class="rotate">
+                          <div class="round"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="../company/index.html">企業概要</a></li>
+                        <li><a href="../contact/index.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cycle"></div>
+        <h2>CONTACT<span>お問い合わせ</span></h2>
+        <form id="contact" name="contact" method="post">
+            <div class="question">
+                <label class="title">会社名</label>
+                <input class="company_name" id="contact_company_name" type="text" name="entry.1423428794">
+                <label class="error" id="text_company_name"></label>
+            </div>
+            <div class="question">
+                <label class="title">氏名<span>必須</span></label>
+                <div class="flex">
+                    <input class="name required" id="contact_name" type="text" name="entry.2117307615" required>
+                    <input class="company_name" id="contact_first_name" type="text" name="contact_first_name" required>
+                </div>
+                <label class="error" id="text_contact_name"></label>
+            </div>   
+            <div class="question">
+                <label class="title">フリガナ<span>必須</span></label>
+                <div class="flex">
+                    <input class="kana required" id="contact_kana" type="text" name="entry.2126760718" value="" pattern="[ァ-ヴー\s　]+" title="全角カタカナ" required>
+                    <input class="first_kana required" id="contact_first_kana" type="text" name="contact_first_kana" value="" pattern="[ァ-ヴー\s　]+" title="全角カタカナ" required>
+                </div>
+                <label class="error" id="text_contact_kana"></label>
+            </div>
+            <div class="question">
+                <label class="title">メールアドレス<span>必須</span></label>
+                <input class="email required" id="contact_email" type="email" name="entry.215863835" placeholder="example@mail.co.jp" required>
+                <label class="error" id="text_contact_email"></label>
+            </div>
+            <!--
+            <div class="question">
+                <label>電話番号（ハイフンなし）<span>必須</span></label>
+                <input class="tel required" id="contact_tel" type="tel" name="entry.1087620094" pattern="^[0-9]+$" title="数字のみ、ハイフンなし" required>
+                <label class="error" id="text_contact_tel"></label>
+            </div>        
+            -->
+            <div class="question">
+                <label class="title">お問合せ内容<span>必須</span></label>
+                <textarea class="comments required" id="contact_comments" name="entry.8787768" required></textarea>
+                <label class="error" id="text_contact_comments"></label>
+            </div>
+
+            <label id="contact_agreement1">個人情報の取り扱いにつきましては<a href="../privacypolicy/index.html" target="_brank">プライバシーポリシー</a>をご確認ください。</label>
+            <div class="agreement_area">
+                <input type="checkbox" name="agreement" id="agreement" value="1" required /><label id="contact_agreement2" for="agreement">プライバシーポリシーに同意する</label>
+            </div>
+            <input class="btn_design" id="confirmBtn" type="button" value="確認する" disabled>
+            <div class="btn_area">
+                <input class="btn_design" id="backBtn" type="hidden" value="戻る">
+                <input class="btn_design" id="submitBtn" type="hidden" value="送信する">
+            </div>
+        </form>
+        <div id="success" style="display: none;">
+            お問合せを受け付けました。
+            <a class="btn_design back" href="../index.html">トップに戻る</a>
+        </div>
+        <div id="error" style="display: none;">
+            お手数をかけますが、再度申し込みをお願いいたします。
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="../company/index.html">企業概要</a></li>
+                <li><a href="../contact/index.html">お問い合わせ</a></li>
+                <li><a href="../privacypolicy/index.html">プライバシーポリシー</a></li>
+            </ul>
+            <p>Copyright © WILLVER, Inc. All rights reserved.</p>
+            <img src="../shared/img/icon.png" alt="WILLVER">
+        </div>
+    </footer>
+    <script type="text/javascript" src="../shared/js/jQuery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../shared/js/contact.js"></script>
+</body>
+</html>

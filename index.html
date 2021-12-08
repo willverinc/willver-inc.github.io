@@ -1,101 +1,147 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta http-equiv="content-type" charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shared/css/reset.css">
-    <link rel="stylesheet" href="shared/css/main.css">
-    <link rel="stylesheet" href="shared/css/top.css">
-    <link rel="stylesheet" href="shared/plugin/jquery.pagepiling.css">
-    <script src="shared/js/jQuery-3.4.1.min.js"></script>
-    <script src="shared/plugin/jquery.pagepiling.min.js"></script>
-    <script src="shared/js/main.js"></script>
+    <link rel="stylesheet" href="shared/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
     <title>WILLVER</title>
 </head>
 <body>
-    <header>
-        <h1 class="site_title">
-            <a href="/">
-                <img src="shared/img/logo.png" alt="WILLVER">
-            </a>
-        </h1>
-        <div class="drawer">
-            <input type="checkbox" id="drawer_check" class="drawer_hidden" >
-            <label for="drawer_check" class="drawer_open"><span></span></label>
-            <nav id="menu_header" class="drawer_content">
-                <ul class="nav">
-                    <li data-menuanchor="page1" class="active"><a href="#page1">ABOUT</a></li>
-                    <li data-menuanchor="page2"><a href="#page2">SERVICE</a></li>
-                    <li data-menuanchor="page3"><a href="#page3">COMPANY</a></li>
-                    <li><a target="_blank" href="https://forms.gle/xJwJkFheVsuzCGh67">CONTACT</a></li>
-                </ul>
-            </nav>
+    <header id="header" class="DownMove">
+        <div class="inner">
+            <div class="position">
+                <h1>
+                    <a href="">
+                        <img src="shared/img/logo.png" alt="WILLVER">
+                    </a>
+                </h1>
+                <nav>
+                    <div class="round-wrap">
+                        <div class="rotate">
+                          <div class="round"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="company/index.html">企業概要</a></li>
+                        <li><a href="contact/index.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <div id="pagepiling">
-            <section class="section about pp-scrollable" id="section1">
-                <div class="wrap">
-                    <div class="center">
-                        <h2>テクノロジーの<br class="tab">チカラで社会を豊かに</h2>
-                        <p>
-                            人類は科学のチカラで繁栄してきました。<br>
-                            しかし、科学によって人間そのものが大きく進化したわけではありません。<br>
-                            現代では、使いこなせないほどの技術や情報が溢れ、その数だけ未来の可能性が埋もれています。<br>
-                            <br>
-                            私たちは、社会を豊かにするビジネスとテクノロジーの可能性を探り、そのポテンシャルを最大限活かすサービスを開発することで社会に貢献していきます。
-                        </p>
-                    </div>
+        <article id="box1" class="box top" data-section-name="Area1">
+            <div class="shadow"></div>
+            <div class="top_bk">
+                <div class="video">
+                    <video src="shared/img/top_mov.mp4" muted autoplay playsinline loop></video>
+                </div>
+            </div>
+            <h2 id="typewriter"></h2>
+        </article>
+        <div id="point"></div>
+        <article id="box2" class="box service" data-section-name="Area2">
+            <section>
+                <div class="cycle design"></div>
+                <h2>Digital Design<span>デジタルデザイン</span></h2>
+                <div class="img">
+                    <!--
+                    <img src="shared/img/service01.svg" alt="デジタルデザイン">
+                    -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="349.838" height="349.8" viewBox="0 0 319.838 319.8">
+                        <g id="レイヤー_2" data-name="レイヤー 2" opacity="0.2">
+                          <g id="layer_1" data-name="layer 1" transform="translate(0 0)">
+                            <path id="パス_10" data-name="パス 10" d="M246.512,319.8H6.662A6.662,6.662,0,0,1,0,313.137V6.662A6.662,6.662,0,0,1,6.662,0H313.137A6.662,6.662,0,0,1,319.8,6.662v239.85H306.475V13.325H13.325v293.15H246.512Z" transform="translate(0 0)" fill="#5c677b"/>
+                            <rect id="長方形_12" data-name="長方形 12" width="72.855" height="13.45" transform="translate(240.252 53.04)" fill="#5c677b"/>
+                            <rect id="長方形_13" data-name="長方形 13" width="86.305" height="13.45" transform="translate(7.117 53.04)" fill="#5c677b"/>
+                            <rect id="長方形_14" data-name="長方形 14" width="13.45" height="13.45" transform="translate(26.172 26.14)" fill="#5c677b"/>
+                            <rect id="長方形_15" data-name="長方形 15" width="13.45" height="13.45" transform="translate(53.072 26.14)" fill="#5c677b"/>
+                            <rect id="長方形_16" data-name="長方形 16" width="13.45" height="13.45" transform="translate(79.972 26.14)" fill="#5c677b"/>
+                            <path id="パス_11" data-name="パス 11" d="M121.262,234.525A113.262,113.262,0,1,1,234.525,121.262,113.262,113.262,0,0,1,121.262,234.525Zm0-213.2A99.937,99.937,0,1,0,221.2,121.262a99.937,99.937,0,0,0-99.937-99.937Z" transform="translate(45.3 45.3)" fill="#5c677b"/>
+                            <path id="パス_12" data-name="パス 12" d="M91.32,131.3a6.663,6.663,0,0,1-4.73-1.932l-53.3-53.3L42.751,66.6l48.57,48.636L115.239,91.32,66.6,42.751l9.461-9.461,53.3,53.3a6.662,6.662,0,0,1,0,9.461L96.051,129.363A6.663,6.663,0,0,1,91.32,131.3Z" transform="translate(188.505 188.505)" fill="#5c677b"/>
+                            <rect id="長方形_17" data-name="長方形 17" width="13.45" height="79.58" transform="translate(159.552 133.74)" fill="#5c677b"/>
+                            <rect id="長方形_18" data-name="長方形 18" width="12.329" height="53.8" transform="translate(127.047 159.52)" fill="#5c677b"/>
+                            <rect id="長方形_19" data-name="長方形 19" width="13.45" height="93.03" transform="translate(226.802 120.29)" fill="#5c677b"/>
+                            <rect id="長方形_20" data-name="長方形 20" width="13.45" height="67.25" transform="translate(193.177 146.07)" fill="#5c677b"/>
+                            <rect id="長方形_21" data-name="長方形 21" width="13.45" height="26.9" transform="translate(93.422 186.42)" fill="#5c677b"/>
+                          </g>
+                        </g>
+                    </svg>                      
+                </div>
+                <div class="detile">
+                    <h3>事業戦略設計　<span>×　</span>DXコンサルティングサービス</h3>
+                    <p>クラウドサービスやIoTを利用したビジネス再構築を通じ事業変革のご支援をいたします</p>
+                </div>                
+            </section>
+            <section>
+                <div class="cycle creative"></div>
+                <h2>Creative<span>クリエイティブ</span></h2>
+                <div class="img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="315.345" height="315.345" viewBox="0 0 315.345 315.345">
+                        <g id="レイヤー_2" data-name="レイヤー 2" transform="translate(0 0.006)" opacity="0.2">
+                          <g id="layer_1" data-name="layer 1" transform="translate(0 -0.006)">
+                            <path id="パス_25" data-name="パス 25" d="M72.258,103.689H6.569A6.569,6.569,0,0,1,0,97.12V44.569A6.569,6.569,0,0,1,6.569,38H72.258a6.569,6.569,0,0,1,6.569,6.569V97.12A6.569,6.569,0,0,1,72.258,103.689ZM13.138,90.551H65.689V51.138H13.138Z" transform="translate(0 211.656)" fill="#5c677b"/>
+                            <path id="パス_26" data-name="パス 26" d="M82.258,125.964H16.569A6.569,6.569,0,0,1,10,119.4V40.569A6.569,6.569,0,0,1,16.569,34H82.258a6.569,6.569,0,0,1,6.569,6.569V119.4A6.569,6.569,0,0,1,82.258,125.964Zm-59.12-13.138H75.689V47.138H23.138Z" transform="translate(55.689 189.38)" fill="#5c677b"/>
+                            <path id="パス_27" data-name="パス 27" d="M92.258,148.24H26.569A6.569,6.569,0,0,1,20,141.671V36.569A6.569,6.569,0,0,1,26.569,30H92.258a6.569,6.569,0,0,1,6.569,6.569v105.1A6.569,6.569,0,0,1,92.258,148.24ZM33.138,135.1H85.689V43.138H33.138Z" transform="translate(111.378 167.105)" fill="#5c677b"/>
+                            <path id="パス_28" data-name="パス 28" d="M102.258,170.516H36.569A6.569,6.569,0,0,1,30,163.947V32.569A6.569,6.569,0,0,1,36.569,26h65.689a6.569,6.569,0,0,1,6.569,6.569V163.947A6.569,6.569,0,0,1,102.258,170.516Zm-59.12-13.138H95.689V39.138H43.138Z" transform="translate(167.067 144.829)" fill="#5c677b"/>
+                            <path id="パス_29" data-name="パス 29" d="M102.859,157.686a6.569,6.569,0,0,1-4.664-1.9l-17.736-17.8H50.308a6.569,6.569,0,0,1-6.569-6.569V101.259l-17.8-17.736a6.569,6.569,0,0,1,0-9.328l17.8-17.736V26.308a6.569,6.569,0,0,1,6.569-6.569H80.459L98.2,1.937a6.569,6.569,0,0,1,9.328,0l17.736,17.8H155.41a6.569,6.569,0,0,1,6.569,6.569V56.459l17.8,17.736a6.569,6.569,0,0,1,0,9.328l-17.8,17.736V131.41a6.569,6.569,0,0,1-6.569,6.569H125.259l-17.736,17.8A6.569,6.569,0,0,1,102.859,157.686ZM56.877,124.841H83.152a6.569,6.569,0,0,1,4.664,1.9l15.043,15.108L117.9,126.746a6.9,6.9,0,0,1,4.664-1.9h26.276V98.566a6.569,6.569,0,0,1,1.9-4.664l15.108-15.043L150.746,63.816a6.569,6.569,0,0,1-1.9-4.664V32.877H122.566a6.9,6.9,0,0,1-4.664-1.9L102.859,15.863,87.816,30.972a6.569,6.569,0,0,1-4.664,1.9H56.877V59.152a6.569,6.569,0,0,1-1.9,4.664L39.863,78.859,54.972,93.9a6.569,6.569,0,0,1,1.9,4.664Z" transform="translate(133.621 0.006)" fill="#5c677b"/>
+                            <path id="パス_30" data-name="パス 30" d="M63.844,72.689A32.844,32.844,0,1,1,96.689,39.844,32.844,32.844,0,0,1,63.844,72.689Zm0-52.551A19.707,19.707,0,1,0,83.551,39.844,19.707,19.707,0,0,0,63.844,20.138Z" transform="translate(172.636 39.02)" fill="#5c677b"/>
+                            <path id="パス_31" data-name="パス 31" d="M13.138,236.48H0V6.569A6.569,6.569,0,0,1,6.569,0H170.791V13.138H13.138Z" transform="translate(0 0.038)" fill="#5c677b"/>
+                            <rect id="長方形_49" data-name="長方形 49" width="12.8" height="171.05" transform="translate(302.538 144.287)" fill="#5c677b"/>
+                            <rect id="長方形_50" data-name="長方形 50" width="144.287" height="12.8" transform="translate(6.982 52.362)" fill="#5c677b"/>
+                            <rect id="長方形_51" data-name="長方形 51" width="12.8" height="12.8" transform="translate(26.763 26.763)" fill="#5c677b"/>
+                            <rect id="長方形_52" data-name="長方形 52" width="12.8" height="12.8" transform="translate(52.362 26.763)" fill="#5c677b"/>
+                            <rect id="長方形_53" data-name="長方形 53" width="12.8" height="12.8" transform="translate(79.125 26.763)" fill="#5c677b"/>
+                          </g>
+                        </g>
+                    </svg>                      
+                </div>
+                <div class="detile">
+                    <p>Webサイトのディレクションやデザインをはじめとした制作全般、グラフィックデザイン制作、ECサイトの構築・運営をご支援いたします<br>
+                        マーケティング支援サービスとしてWeb広告支援をはじめ、SNS運用などをご支援いたします</p>
                 </div>
             </section>
-            <section class="section service pp-scrollable" id="section2">
-                <div class="wrap">
-                    <div class="center">
-                        <h2>SERVICE</h2>
-                        <div class="list">
-                            <section>
-                                <img src="shared/img/service01.svg" alt="システムコンサルティング">
-                                <h3>システムコンサルティング</h3>
-                            </section>
-                            <section>
-                                <img src="shared/img/service02.svg" alt="情報システム開発・保守">
-                                <h3>情報システム開発・保守</h3>
-                            </section>
-                            <section>
-                                <img src="shared/img/service01.svg" alt="Webサイト制作・運営">
-                                <h3>Webサイト制作・運営</h3>
-                            </section>
-                        </div>
-                    </div>
+            <section>
+                <div class="cycle oto"></div>
+                <h2>Online to Offline<span>デジタル × リアル</span></h2>
+                <div class="img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="320.036" height="320.279" viewBox="0 0 320.036 320.279">
+                        <g id="レイヤー_2" data-name="レイヤー 2" opacity="0.2">
+                          <g id="layer_1" data-name="layer 1">
+                            <path id="パス_32" data-name="パス 32" d="M166.812,320.279H33.362A33.362,33.362,0,0,1,0,286.917V33.362A33.362,33.362,0,0,1,33.362,0h133.45a33.362,33.362,0,0,1,33.362,33.362v26.69a6.672,6.672,0,0,1-6.672,6.672H13.345V253.554H193.5a6.672,6.672,0,0,1,6.672,6.672v26.69A33.362,33.362,0,0,1,166.812,320.279ZM13.345,266.9v20.017a20.017,20.017,0,0,0,20.017,20.017h133.45a20.017,20.017,0,0,0,20.017-20.017V266.9Zm0-213.519H186.829V33.362a20.017,20.017,0,0,0-20.017-20.017H33.362A20.017,20.017,0,0,0,13.345,33.362Z" fill="#5c677b"/>
+                            <rect id="長方形_54" data-name="長方形 54" width="66" height="13" transform="translate(67 27)" fill="#5c677b"/>
+                            <rect id="長方形_55" data-name="長方形 55" width="13" height="13" transform="translate(147 27)" fill="#5c677b"/>
+                            <rect id="長方形_56" data-name="長方形 56" width="13" height="14" transform="translate(140 280)" fill="#5c677b"/>
+                            <rect id="長方形_57" data-name="長方形 57" width="14" height="14" transform="translate(93 280)" fill="#5c677b"/>
+                            <rect id="長方形_58" data-name="長方形 58" width="13" height="14" transform="translate(47 280)" fill="#5c677b"/>
+                            <path id="パス_33" data-name="パス 33" d="M171.605,209.174H158.26v-53.38a6.672,6.672,0,0,1,6.672-6.672H211.64a6.672,6.672,0,0,1,6.672,6.672v20.017l55.382-40.035L218.313,95.742V115.76a6.672,6.672,0,0,1-6.672,6.672H91.536v26.69a6.557,6.557,0,0,1-10.342,5.4L7.8,101.147a6.672,6.672,0,0,1,0-10.809l73.4-53.38a6.557,6.557,0,0,1,10.342,5.4v26.69H158.26V9h13.345V75.725a6.672,6.672,0,0,1-6.672,6.672H84.863a6.672,6.672,0,0,1-6.672-6.672V55.707L22.809,95.742l55.382,40.035V115.76a6.672,6.672,0,0,1,6.672-6.672h120.1V82.4a6.557,6.557,0,0,1,10.342-5.4l73.4,53.38a6.672,6.672,0,0,1,0,10.809l-73.4,53.38a6.557,6.557,0,0,1-10.342-5.4v-26.69H171.605Z" transform="translate(28.569 51.052)" fill="#5c677b"/>
+                          </g>
+                        </g>
+                    </svg>                      
+                </div>
+                <div class="detile">
+                    <p>店舗の除菌・抗菌コーティング施工のeDefenderの運営<br>
+                        ECサイトの構築、店舗向けモバイルオーダーシステムの開発など店舗のDX化を支援いたします</p>
                 </div>
             </section>
-            <section class="section company pp-scrollable" id="section3">
-                <div class="wrap">
-                    <div class="center">
-                        <h2>COMPANY</h2>
-                        <dl>
-                            <dt>会社名</dt>
-                            <dd>WILLVER合同会社</dd>
-                            <dt>事業内容</dt>
-                            <dd>
-                                システムコンサルティング事業<br>
-                                情報システム開発・保守<br>
-                                Webサイト制作・運営<br>
-                                コンピュータシステム及びネットワークの導入
-                            </dd>
-                            <dt>所在地</dt>
-                            <dd>神奈川県横浜市西区北幸一丁目11番1号水信ビル7階</dd>
-                            <dt>資本金</dt>
-                            <dd>1,000,000円</dd>
-                            <dt>代表社員</dt>
-                            <dd><img src="shared/img/name.png" alt=""></dd>
-                        </dl>
-                    </div>
-                    <p class="copyright">© WILLVER, Inc. All rights reserved.</p>
-                </div>
-            </section>
-        </div>
+        </article>
     </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="company/index.html">企業概要</a></li>
+                <li><a href="contact/index.html">お問い合わせ</a></li>
+                <li><a href="privacypolicy/index.html">プライバシーポリシー</a></li>
+            </ul>
+            <p>Copyright © WILLVER, Inc. All rights reserved.</p>
+            <img src="shared/img/icon.png" alt="WILLVER">
+        </div>
+    </footer>
+    <script type="text/javascript" src="shared/js/jQuery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="shared/js/jquery.scrollify.min.js"></script>
+    <script type="text/javascript" src="shared/js/main.js"></script>
 </body>
 </html>
